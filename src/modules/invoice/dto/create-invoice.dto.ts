@@ -37,7 +37,7 @@ export class CreateInvoiceDto {
   clientId: string;
 
   @ApiProperty({
-    description: 'Array of order IDs to be included in the invoice',
+    description: 'Array of item DTOs to be included in the invoice',
     type: [ItemDto],
   })
   @IsNotEmpty()
